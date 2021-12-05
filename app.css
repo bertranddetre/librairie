@@ -1,0 +1,20 @@
+body
+{
+  
+}
+
+header
+{
+  background-color: blue;
+  color: antiquewhite;
+}
+
+header ul
+{
+  display: flex;
+}
+
+header ul li
+{
+  list-style-type: none;
+}
