@@ -7,15 +7,28 @@ body
   padding:                                  0;
   margin:                                   0;
   box-sizing:                               border-box;
-  font-family:                              Arial, Helvetica, sans-serif;
+  font-family:                              Arial, Helvetica, sans-serif; 
+}
+
+body
+{
+  background-color:                         #ef8354;
+  
+}
+
+main
+{
+  height:                                   100%;
+  padding-top:                              5rem;
 }
 
 /* HEADER*/
 
 header
 {
-  background-color:                        blue;
-  color:                                   antiquewhite;
+  background-color:                        #ef8354;
+  position:                                fixed;
+  width:                                    100%;
   
 }
 
@@ -35,16 +48,21 @@ header ul li
 
 header a
 {
-  color:                                 white;
-  text-decoration:                        underline;
+  color:                                 #fbd1a2;
+  text-decoration:                       none;
 }
 
+header a:hover
+{
+  text-decoration:                        underline;
+}
 /*BANNER*/
 
 .banner
 {
-  margin:                                 100px 15%;
+  padding:                                50px 15%;
   height:                                 500px;
+  margin-bottom:                          50px;
   background-image:                       url(images/lib.jpg);
   background-position:                    center;
   background-size:                        cover;
@@ -62,9 +80,10 @@ header a
   width:                                  100%;
   padding:                                10px 20px;
   font-size:                              16px;
-  color:                                  blue;
+  color:                                  #0f7173;
   border-radius:                          50px;
-  border:                                 solid 1px
+  border:                                 solid 1px;
+  background-color:                       #fbd1a2;
 }
 
 /*BOOK LIST*/
@@ -72,6 +91,7 @@ header a
 .book-list-title
 {
   font-size:                              25px;
+  color:                                  #0f7173;
   font-weight:                            bold;
 }
 
@@ -86,6 +106,9 @@ header a
 .book-list
 {
   margin:                                 0 15% 50px;
+  background:                             #fbd1a2;
+  padding:                                50px 40px;
+  border-radius:                          30px;
 }
 
 .book-item
@@ -101,4 +124,24 @@ header a
   background-position:                    center;
   background-size:                        cover;
   margin-bottom:                          15px;
+  box-shadow:                             5px 5px 5px;
+}
+
+.book-title
+{
+  font-size:                              16px;
+  font-weight:                            bold;
+  font-style:                             italic;
+}
+
+.book-author
+{
+  font-size:                              16px;
+}
+
+.book-plus
+{
+  text-align:                             right;
+  margin-top:                             20px;
+  font-style:                             italic;
 }
