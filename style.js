@@ -1,10 +1,11 @@
 //créer un livre
-let book;
-let title = "les Misérables";
-let author = "Victor Hugo";
-let price = 14.95;
-let category = "Drame";
-let releaseDate = new Date ("1997,05,23");
-let nbSales = 345;
+//importer le json
+var livres=JSON.stringify(books);
+let books = [];
 
-
+//tableau object pour le panier
+let card =
+[
+  {id:'0',qtt: 1},
+  {id:'1',qtt: 2},
+];
