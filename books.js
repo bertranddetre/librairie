@@ -14,7 +14,7 @@ let books =
   },
   {
     id: "1",
-    title : "les jupes",
+    title : "fight club",
     author :"Victor Hugo",
     price :4.95,
     category : "Drame",
@@ -26,7 +26,7 @@ let books =
     },
     {
       id: "2",
-      title : "les grands",
+      title : "les miserables 2",
       author :"Victor Hugo",
       price :1.95,
       category : "Drame",

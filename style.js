@@ -23,9 +23,40 @@ else
 //sorties récentes
 
 //meilleures ventes
-
+if (books[0].nbSales > books[1].nbSales)
+{
+  console.log (books[0].title)
+}
 //le panier
 if (cart[1])
 {
   cart[1].qtt++;
 }
+
+//classement des meilleures ventes
+
+
+for (let i=0; i < books.length; i++)
+{
+  for (let j=0; j < books.length - i - 1;j++)
+  {
+    if (books[j].nbSales > books[j+1].nbSales)
+    {
+      let tmp = books [j];
+      books [j] = books[j+1];
+      books[j+1] = tmp;
+    }
+  }
+}
+
+//sorties récentes des livres 
+
+const lastestReleases = (books) =>{
+  let bestSales = [...books];
+  function sortBestSales (a,b)
+  {
+    return a.nbSales - b.nbSales;
+  }
+};
+
+
